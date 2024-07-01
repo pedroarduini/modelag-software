@@ -76,7 +76,7 @@ public class Campanha {
     public void setApplications(List<Aplicacao> applications) {
         this.applications = applications;
     }
-    
+
     public LocalDate getDataInicio() {
         return dataInicio;
     }

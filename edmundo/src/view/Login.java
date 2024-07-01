@@ -26,8 +26,8 @@ public class Login extends JFrame {
 	private JTextField textField;
 	private JPasswordField passwordField;
 	private Authenticate auth = new Authenticate();
-	
-	
+
+
 	/**
 	 * Launch the application.
 	 */
@@ -55,30 +55,30 @@ public class Login extends JFrame {
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+
 		JPanel panel = new JPanel();
 		panel.setBounds(6, 10, 438, 256);
 		contentPane.add(panel);
 		panel.setLayout(null);
-		
+
 		JLabel lblNewLabel = new JLabel("Email");
 		lblNewLabel.setBounds(114, 64, 61, 16);
 		panel.add(lblNewLabel);
-		
+
 		textField = new JTextField();
 		textField.setBounds(156, 59, 162, 26);
 		panel.add(textField);
 		textField.setColumns(10);
-		
+
 		JLabel lblNewLabel_1 = new JLabel("Senha");
 		lblNewLabel_1.setBounds(114, 110, 61, 16);
 		panel.add(lblNewLabel_1);
-		
+
 		JLabel lblNewLabel_2 = new JLabel("Login");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_2.setBounds(188, 16, 61, 16);
 		panel.add(lblNewLabel_2);
-		
+
 		JButton btnNewButton = new JButton("Entrar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -88,7 +88,7 @@ public class Login extends JFrame {
 					String email = textField.getText();
                     String password = new String(passwordField.getPassword());
                     User user = auth.authenticate(email, password);
-                    
+
                     if(user != null) {
                         if(user.getType() == UserType.MARCA) {
                             TelaMarca telaMarca = new TelaMarca();
@@ -112,11 +112,11 @@ public class Login extends JFrame {
 		});
 		btnNewButton.setBounds(168, 153, 117, 29);
 		panel.add(btnNewButton);
-		
+
 		passwordField = new JPasswordField();
 		passwordField.setBounds(156, 105, 162, 26);
 		panel.add(passwordField);
 	}
-	
-	  
+
+
 }

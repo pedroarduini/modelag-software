@@ -53,7 +53,7 @@ public class Post {
     public void setData(LocalDateTime data) {
         this.data = data;
     }
-    
+
     public Number getLikes() {
         return likes;
     }
@@ -85,5 +85,5 @@ public class Post {
     public void setAutor(String autor) {
         this.autor = autor;
     }
-    
+
 }

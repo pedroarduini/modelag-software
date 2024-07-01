@@ -11,8 +11,8 @@ public class Aplicacao {
     private LocalDate dataFim;
     private Number preco;
     private Boolean pago;
-    
-    
+
+
 
     public Long getId() {
         return id;
@@ -37,7 +37,7 @@ public class Aplicacao {
     public void setInfluencerId(Long influencerId) {
         this.influencerId = influencerId;
     }
-    
+
     public Boolean getAprovado() {
         return aprovado;
     }

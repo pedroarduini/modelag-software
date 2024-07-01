@@ -29,7 +29,7 @@ public class Influencer extends User {
     public void setPosts(List<Post> posts) {
         this.posts = posts;
     }
-    
+
     public String getCpf() {
         return cpf;
     }

@@ -8,7 +8,7 @@ public class Marca extends User {
 	private Number orcamento;
     private List<Campanha> campaigns;
     private List<Produto> produtos;
-    
+
     public Marca() {
         this.type = UserType.MARCA;
     }
@@ -25,27 +25,27 @@ public class Marca extends User {
     public void setProdutos(List<Produto> produtos) {
         this.produtos = produtos;
     }
-    
+
     public String getCnpj() {
     	return cnpj;
     }
-    
+
     public void setCnpj(String cnpj) {
     	this.cnpj = cnpj;
     }
-    
+
     public String getCategoria() {
     	return categoria;
     }
-    
+
     public void setCategoria(String categoria) {
     	this.categoria = categoria;
     }
-    
+
     public Number getOrcamento() {
     	return orcamento;
     }
-    
+
     public void setOrcamento(Number orcamento) {
     	this.orcamento = orcamento;
     }
