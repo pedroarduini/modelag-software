@@ -7,6 +7,7 @@ public class Marca extends User {
 	private String categoria;
 	private Number orcamento;
     private List<Campanha> campaigns;
+    private List<Produto> produtos;
     
     public Marca() {
         this.type = UserType.MARCA;
@@ -19,6 +20,10 @@ public class Marca extends User {
 
     public void setCampaigns(List<Campanha> campaigns) {
         this.campaigns = campaigns;
+    }
+
+    public void setProdutos(List<Produto> produtos) {
+        this.produtos = produtos;
     }
     
     public String getCnpj() {
@@ -44,5 +49,14 @@ public class Marca extends User {
     public void setOrcamento(Number orcamento) {
     	this.orcamento = orcamento;
     }
+
+    public List<Produto> get_produtos() {
+        return produtos;
+    }
+
 }
 
+public void lanca_campanha(String objetivo, double orcamento, LocalDate data_de_termino) {
+    Campanha campanha = new Campanha(objetivo, orcamento, data_de_termino);
+    this.campanhas.add(campanha);
+}
